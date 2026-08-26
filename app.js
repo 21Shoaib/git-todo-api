@@ -11,6 +11,17 @@ app.get("/", (req, res) => {
   });
 });
 
+// Get all todos
+app.get("/todos", (req, res) => {
+  res.json([
+    {
+      id: 1,
+      title: "Learn Git",
+      completed: false,
+    },
+  ]);
+});
+
 app.listen(5000, () => {
   console.log("Server running on port 5000");
 });
