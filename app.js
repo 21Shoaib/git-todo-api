@@ -7,7 +7,7 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.json({
     success: true,
-    message: "Todo API is running!",
+    message: "Todo API is running from FEATURE!",
   });
 });
 
