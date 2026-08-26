@@ -22,6 +22,15 @@ app.get("/todos", (req, res) => {
   ]);
 });
 
+// Get a single todo
+app.get("/todos/:id", (req, res) => {
+  res.json({
+    id: req.params.id,
+    title: "Learn Git",
+    completed: false,
+  });
+});
+
 app.listen(5000, () => {
   console.log("Server running on port 5000");
 });
